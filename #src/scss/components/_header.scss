@@ -1,0 +1,16 @@
+/*.header {
+    &__logo {
+    }
+}
+*/
+.logo {
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    span {
+        font-weight: 700;
+    }
+    svg {
+        fill: var(--color-primary);
+    }
+}
