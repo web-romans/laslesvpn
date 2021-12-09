@@ -1,16 +1,47 @@
-/*.header {
+.header {
+    width: 100%;
+    padding: 45px 0;
+    background-color: var(--color-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    @include tablet {
+        padding: 20px 0;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     &__logo {
+        transform: translate(-2px, 0px);
     }
-}
-*/
-.logo {
-    color: var(--color-black);
-    font-size: 20px;
-    font-weight: 500;
-    span {
-        font-weight: 700;
+    &__nav {
+        margin-left: 48px;
+        @include tablet {
+            margin-left: 0px;
+        }
     }
-    svg {
-        fill: var(--color-primary);
+    &__buttons {
+        @include tablet {
+            display: none;
+        }
+        &.mobile {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            bottom: 20px;
+            left: 5%;
+            z-index: 6;
+        }
+    }
+    &__btn {
+        padding-left: 45px;
+        padding-right: 45px;
+        &:first-of-type {
+            padding-right: 26px;
+        }
     }
 }

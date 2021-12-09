@@ -1,0 +1,14 @@
+.logo {
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    span {
+        font-weight: 700;
+    }
+    svg {
+        margin-right: 10px;
+        fill: var(--color-primary);
+    }
+}

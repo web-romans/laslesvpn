@@ -9,21 +9,24 @@ html {
 }
 
 body {
-    margin: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
-}
-
-img {
-    max-width: 100%;
+    min-width: 320px;
 }
 
 a {
     text-decoration: none;
 }
 
+.main {
+    padding-top: 137px;
+    @include tablet {
+        padding-top: 80px;
+    }
+}
+
 .container {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1240px; // + padding * 2
+    max-width: 1180px; // + padding * 2
 }
