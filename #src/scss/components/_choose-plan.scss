@@ -1,0 +1,35 @@
+.choose-plan {
+    padding-top: 78px;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__title {
+        @include title;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        @include title;
+    }
+
+    &__slider {
+        flex: 0 1 100%;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    &__items {
+        flex: 0 1 100%;
+        display: flex;
+        justify-content: space-around;
+        @include container {
+            justify-content: unset;
+        }
+    }
+
+    &__item {
+        flex: 0 0 330px;
+    }
+}

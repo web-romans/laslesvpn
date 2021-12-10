@@ -8,20 +8,37 @@
     padding-top: 13px;
     padding-bottom: 13px;
     transition: all 0.2s ease-in-out;
+    position: relative;
     cursor: pointer;
 
     &:hover {
         transition: all 0.2s ease-in-out;
         color: var(--color-light);
         background-color: var(--color-primary);
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 96%;
+            height: 100%;
+            top: 52%;
+            left: 2%;
+            background: rgba(245, 56, 56, 0.35);
+            filter: blur(20px);
+            opacity: 1;
+        }
     }
 
     &--clear {
-        border: transparent;
+        border: none;
         color: var(--color-black);
+        background-color: transparent;
         &:hover {
             color: var(--color-primary);
             background-color: var(--color-light);
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -31,6 +48,9 @@
         &:hover {
             background-color: var(--color-light);
             color: var(--color-primary);
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -38,7 +58,6 @@
         border-radius: 10px;
         width: 250px;
         padding: 20px 0;
-        position: relative;
         &::after {
             content: "";
             position: absolute;

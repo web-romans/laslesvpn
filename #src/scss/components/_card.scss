@@ -1,0 +1,74 @@
+.card {
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 273px;
+    padding-bottom: 43px;
+    background-color: var(--color-light);
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    background-position: top 76px left 88px;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    @include container {
+        background-position: top 76px center;
+    }
+
+    @include minitablet {
+        background-position: top 40px center;
+        padding-top: 220px;
+        padding-bottom: 20px;
+    }
+    &--free {
+        background-image: url(../img/plan-free.webp);
+    }
+    &--standart {
+        background-image: url(../img/plan-standart.webp);
+    }
+    &--premium {
+        background-image: url(../img/plan-premium.webp);
+    }
+
+    &__list {
+        margin-top: 30px;
+        margin-bottom: 41px;
+        flex-grow: 1;
+        li {
+            background-image: url(../img/card-li.svg);
+            background-repeat: no-repeat;
+            background-position: top 2px left;
+            padding-left: 44px;
+            font-size: 14px;
+            line-height: 30px;
+            color: var(--color-gray);
+            &:not(&:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__cost {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: var(--color-black);
+        margin-bottom: 20px;
+        span {
+            font-weight: 400;
+            color: var(--color-gray);
+        }
+    }
+
+    &__btn {
+        transform: translate(-1px, -1px);
+        padding: 13px 68px;
+        text-indent: -6px;
+    }
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        border-color: var(--color-primary);
+    }
+}
