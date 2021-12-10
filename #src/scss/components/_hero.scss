@@ -1,6 +1,6 @@
 .hero {
     padding-top: 70px;
-    padding-bottom: 132px;
+    padding-bottom: 78px;
     @include mobile {
         padding-top: 0px;
         padding-bottom: 50px;
@@ -14,6 +14,9 @@
 
     &__desc {
         flex: 0 1 50%;
+        @include container {
+            flex: 0 1 60%;
+        }
         @include minitablet {
             flex: 0 1 100%;
             text-align: center;
@@ -32,8 +35,9 @@
     &__bg-img {
         flex: 0 1 50%;
         position: relative;
-        @include tablet {
-            display: flex;
+        display: flex;
+        @include container {
+            flex: 0 1 40%;
             align-items: flex-end;
         }
 
@@ -41,20 +45,15 @@
             flex: 0 1 100%;
             margin-top: 50px;
         }
-        picture {
-            top: -25px;
-            left: 25px;
-            position: absolute;
-            object-fit: none;
+        img {
+            transform: translate(65px, -28px);
             @include container {
-                top: 0px;
-                left: 0px;
+                transform: translate(0, 0);
+            }
+
+            @include tablet {
                 max-width: 100%;
-                position: relative;
-                img {
-                    max-width: 100%;
-                    object-fit: cover;
-                }
+                object-fit: contain;
             }
         }
     }

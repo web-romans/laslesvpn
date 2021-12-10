@@ -3,6 +3,7 @@
 @import "mixins";
 @import "fonts";
 @import "typography";
+@import "animate";
 @import "settings";
 
 // компоненты страницы
@@ -11,6 +12,7 @@
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";
+@import "./components/features";
 @import "./components/footer";
 
 // подключения компонентов страницы (маленькие компоненты)
