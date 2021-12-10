@@ -8,12 +8,30 @@
         max-height: 0px;
         opacity: 0;
     }
-    50% {
+    75% {
         max-height: 100%;
         opacity: 0.5;
     }
     100% {
         max-height: 100%;
         opacity: 1;
+    }
+}
+
+@keyframes pin-run {
+    0% {
+        transform: scale(1) rotate(135deg) translate(0px, 0px);
+    }
+    25% {
+        transform: scale(1.5) rotate(135deg) translate(-5px, 5px);
+    }
+    50% {
+        transform: scale(2) rotate(135deg) translate(-10px, 10px);
+    }
+    75% {
+        transform: scale(1.5) rotate(135deg) translate(-5px, 5px);
+    }
+    100% {
+        transform: scale(1) rotate(135deg) translate(0px, 0px);
     }
 }
