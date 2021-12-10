@@ -1,7 +1,9 @@
 .hero {
     padding-top: 70px;
+    padding-bottom: 132px;
     @include mobile {
         padding-top: 0px;
+        padding-bottom: 50px;
     }
     &__container {
         display: flex;
@@ -51,7 +53,7 @@
                 position: relative;
                 img {
                     max-width: 100%;
-                    object-fit: contain;
+                    object-fit: cover;
                 }
             }
         }

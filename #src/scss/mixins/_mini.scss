@@ -1,0 +1,17 @@
+@mixin border-right {
+    width: 2px;
+    height: 100%;
+    border-radius: 2px;
+    background-color: var(--color-gray-light);
+}
+
+@mixin container-about {
+    flex: 0 1 33%;
+    padding: 30px 10px 30px 150px;
+    @include tablet {
+        padding: 30px 10px 30px 100px;
+    }
+    @include minitablet {
+        flex: 0 1 100%;
+    }
+}

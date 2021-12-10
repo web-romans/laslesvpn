@@ -1,0 +1,135 @@
+.about {
+    @include container {
+        padding: 0px 20px;
+    }
+    &__list {
+        max-width: 1100px;
+        padding: 35px 20px;
+        margin: 0 auto;
+        border-radius: 10px;
+        display: flex;
+        background-color: var(--color-light);
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 90%;
+            height: 100%;
+            position: absolute;
+            left: 5%;
+            top: 60px;
+            background: #0d1025;
+            opacity: 0.06;
+            border-radius: 10px;
+            filter: blur(50px);
+            box-shadow: 0px 0px 0px 78px rgba(#0d1025, 0.06);
+            z-index: -1;
+        }
+
+        @include minitablet {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        padding: 30px 0 30px 0;
+        position: relative;
+
+        &--users {
+            flex: 0 0 322px;
+            padding-left: 140px;
+            padding-right: 20px;
+            &::after {
+                left: 49px;
+                background-image: url(../img/user-ico.svg);
+            }
+            &::before {
+                content: "";
+                @include border-right;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+
+            @include container {
+                @include container-about;
+            }
+        }
+        &--location {
+            flex: 0 0 431px;
+            padding-left: 205px;
+            padding-right: 20px;
+            &::after {
+                left: 115px;
+                background-image: url(../img/location-ico.svg);
+            }
+            &::before {
+                content: "";
+                @include border-right;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+
+            @include container {
+                @include container-about;
+            }
+        }
+
+        &--servers {
+            flex: 0 0 347px;
+            padding-left: 184px;
+            padding-right: 20px;
+
+            &::after {
+                left: 92px;
+                background-image: url(../img/servers-ico.svg);
+            }
+
+            @include container {
+                @include container-about;
+            }
+        }
+
+        &::after {
+            content: "";
+            width: 56px;
+            height: 56px;
+            top: 33px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: var(--color-pink);
+            background-size: 24px 24px;
+            background-repeat: no-repeat;
+            background-position: 16px 16px;
+            @include container {
+                left: 50px;
+            }
+
+            @include tablet {
+                left: 20px;
+            }
+        }
+        @include minitablet {
+            text-align: center;
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__text {
+        &--num {
+            color: var(--color-black);
+            margin-bottom: 3px;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &--name {
+            color: var(--color-gray);
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
