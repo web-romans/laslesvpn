@@ -12,6 +12,7 @@
         z-index: 1;
         cursor: pointer;
         border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+        box-shadow: 0px 0px 11px 7px rgba(34, 60, 80, 0.2);
 
         &::after {
             content: "";
@@ -60,6 +61,27 @@
             top: 165px;
             left: 561px;
             animation: pin-run 0.8s linear infinite;
+        }
+        &--new-york {
+            width: 14px;
+            height: 14px;
+            top: 190px;
+            left: 270px;
+            animation: pin-run 1.3s linear infinite;
+        }
+        &--los-angeles {
+            width: 14px;
+            height: 14px;
+            top: 201px;
+            left: 175px;
+            animation: pin-run 1.3s linear infinite;
+        }
+        &--brasilia {
+            width: 14px;
+            height: 14px;
+            top: 380px;
+            left: 340px;
+            animation: pin-run 1.3s linear infinite;
         }
     }
 }
