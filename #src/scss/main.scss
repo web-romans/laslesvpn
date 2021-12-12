@@ -1,6 +1,6 @@
 // базовые подключения
-@import "vars";
 @import "mixins";
+@import "vars";
 @import "fonts";
 @import "typography";
 @import "animate";
@@ -15,6 +15,8 @@
 @import "./components/features";
 @import "./components/choose-plan";
 @import "./components/location";
+@import "./components/partners";
+@import "./components/reviews";
 @import "./components/footer";
 
 // подключения компонентов страницы (маленькие компоненты)
@@ -24,3 +26,6 @@
 @import "./components/card";
 @import "./components/burger";
 @import "./components/map";
+@import "./components/partners-slider";
+@import "./components/reviews-slider";
+@import "./components/reviews-item";

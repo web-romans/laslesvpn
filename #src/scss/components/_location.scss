@@ -1,7 +1,8 @@
 .location {
+    background: rgb(254, 254, 254);
+    background: linear-gradient(180deg, rgba(254, 254, 254, 1) 0%, rgba(255, 255, 255, 1) 100%);
     padding-top: 53px;
-    background: #fbfbfb;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -16,5 +17,9 @@
     &__map {
         margin-top: 150px;
         transform: translate(37px, 5px);
+        @include container {
+            margin-top: 50px;
+            transform: translate(0px, 0px);
+        }
     }
 }

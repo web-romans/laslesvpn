@@ -1,0 +1,8 @@
+.partners-slider {
+    background: var(--color-light);
+    overflow: hidden;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+}

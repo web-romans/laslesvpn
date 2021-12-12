@@ -1,10 +1,15 @@
 .map {
     width: 100%;
     max-width: 1160px;
-    height: 100%;
-    min-height: 538px;
+    height: 538px;
     background-image: url(../img/map.webp);
     background-repeat: no-repeat;
+
+    @include container {
+        background-image: url(../img/map-mobile.webp);
+        height: auto;
+        background-size: contain;
+    }
     &__pin {
         position: absolute;
         border-radius: 50%;
@@ -13,7 +18,9 @@
         cursor: pointer;
         border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
         box-shadow: 0px 0px 11px 7px rgba(34, 60, 80, 0.2);
-
+        @include container {
+            display: none;
+        }
         &::after {
             content: "";
             width: 80%;
@@ -70,18 +77,34 @@
             animation: pin-run 1.3s linear infinite;
         }
         &--los-angeles {
-            width: 14px;
-            height: 14px;
+            width: 22px;
+            height: 22px;
             top: 201px;
             left: 175px;
-            animation: pin-run 1.3s linear infinite;
+            animation: pin-run 1.4s linear infinite;
         }
         &--brasilia {
-            width: 14px;
-            height: 14px;
+            width: 24px;
+            height: 24px;
             top: 380px;
             left: 340px;
-            animation: pin-run 1.3s linear infinite;
+            animation: pin-run 1s linear infinite;
+        }
+
+        &--sidney {
+            width: 24px;
+            height: 24px;
+            top: 414px;
+            left: 933px;
+            animation: pin-run 1.2s linear infinite;
+        }
+
+        &--shanghai {
+            width: 20px;
+            height: 20px;
+            top: 223px;
+            left: 842px;
+            animation: pin-run 0.8s linear infinite;
         }
     }
 }
