@@ -3,6 +3,13 @@
     flex-direction: column;
     border: 2px solid #dddddd;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        border-color: var(--color-primary);
+    }
 
     &__header {
         display: flex;

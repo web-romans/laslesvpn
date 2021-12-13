@@ -3,7 +3,6 @@
     padding-top: 100px;
     padding-bottom: 115px;
     &__container {
-        display: flex;
         justify-content: space-between;
         @include tablet {
             flex-wrap: wrap;

@@ -98,7 +98,7 @@ let reviewsSlider = new Swiper(revSlider, {
     },
     breakpoint: {
         320: {
-            slidesPerView: 1,
+            slidesPerView: "auto",
             centeredSlides: true,
             navigation: true,
             pagination: true,

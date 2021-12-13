@@ -1,7 +1,5 @@
 .reviews {
-    padding-bottom: 50px;
     &__container {
-        display: flex;
         flex-direction: column;
         text-align: center;
     }
@@ -9,7 +7,7 @@
     &__slider-container {
         position: relative;
         margin-top: 59px;
-        padding-bottom: 117px;
+        padding-bottom: 128px;
         overflow: hidden;
         @include container {
             padding: 0px 20px;

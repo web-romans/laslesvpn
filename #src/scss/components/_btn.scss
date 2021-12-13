@@ -9,6 +9,7 @@
     padding-bottom: 13px;
     transition: all 0.2s ease-in-out;
     position: relative;
+    z-index: 2;
     cursor: pointer;
 
     &:hover {
@@ -58,6 +59,7 @@
         border-radius: 10px;
         width: 250px;
         padding: 20px 0;
+        transform: translate(0, 0);
         &::after {
             content: "";
             position: absolute;
